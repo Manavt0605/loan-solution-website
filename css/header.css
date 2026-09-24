@@ -1,0 +1,193 @@
+/* ========================================
+   HEADER
+======================================== */
+
+.header {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+    background: #ffffff;
+
+    transition: 0.3s ease;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+/* Header Scroll */
+
+.header.scrolled {
+    box-shadow:
+        0 5px 25px
+        rgba(0, 0, 0, 0.08);
+}
+
+/* ========================================
+   NAVBAR
+======================================== */
+
+.navbar {
+    height: 80px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+}
+
+/* ========================================
+   LOGO
+======================================== */
+
+.logo img {
+    width: 55px;
+    height: 55px;
+
+    object-fit: contain;
+}
+
+/* ========================================
+   NAVIGATION
+======================================== */
+
+.nav {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    margin-left: auto;
+}
+
+.nav > a,
+.dropdown-link {
+    font-size: 14px;
+
+    font-weight: 500;
+
+    color: #2b2b2b;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    white-space: nowrap;
+}
+
+.nav > a:hover,
+.dropdown-link:hover,
+.nav a.active {
+    color: #c90068;
+}
+
+/* ========================================
+   DROPDOWN
+======================================== */
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-link {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+}
+
+.dropdown-menu {
+    position: absolute;
+
+    top: 35px;
+    left: 0;
+
+    width: 230px;
+
+    background: #ffffff;
+
+    border-radius: 8px;
+
+    padding: 10px 0;
+
+    box-shadow:
+        0 15px 40px
+        rgba(0, 0, 0, 0.12);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateY(10px);
+
+    transition: 0.25s ease;
+}
+
+.dropdown-menu a {
+    display: block;
+
+    padding: 12px 20px;
+
+    font-size: 14px;
+
+    color: #444;
+
+    transition: 0.3s;
+}
+
+.dropdown-menu a:hover {
+    background: #faf0f6;
+
+    color: #c90068;
+
+    padding-left: 25px;
+}
+
+/* Desktop Hover */
+
+@media (min-width: 769px) {
+
+    .dropdown:hover .dropdown-menu {
+        opacity: 1;
+
+        visibility: visible;
+
+        transform: translateY(0);
+    }
+
+}
+
+/* ========================================
+   MENU TOGGLE
+======================================== */
+
+.menu-toggle {
+    display: none;
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    color: #3d1468;
+}
+
+/* ========================================
+   HEADER APPLY BUTTON
+======================================== */
+
+.navbar > .btn {
+    white-space: nowrap;
+}

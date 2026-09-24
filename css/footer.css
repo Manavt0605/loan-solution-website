@@ -1,0 +1,112 @@
+/* ========================================
+   FOOTER
+======================================== */
+
+.footer {
+    background: #1f0c35;
+
+    color: #ffffff;
+
+    padding: 70px 0 0;
+}
+
+/* ========================================
+   FOOTER GRID
+======================================== */
+
+.footer-grid {
+    display: grid;
+
+    grid-template-columns:
+        2fr 1fr 1fr 1.2fr;
+
+    gap: 50px;
+
+    padding-bottom: 50px;
+}
+
+/* ========================================
+   FOOTER LOGO
+======================================== */
+
+.footer-logo {
+    width: 70px;
+
+    margin-bottom: 20px;
+}
+
+.footer-about p {
+    color: rgba(255, 255, 255, 0.7);
+
+    font-size: 14px;
+
+    max-width: 300px;
+}
+
+/* ========================================
+   FOOTER HEADINGS
+======================================== */
+
+.footer h3 {
+    font-size: 18px;
+
+    margin-bottom: 20px;
+
+    color: #ffffff;
+}
+
+/* ========================================
+   FOOTER LINKS
+======================================== */
+
+.footer a {
+    display: block;
+
+    color: rgba(255, 255, 255, 0.7);
+
+    margin-bottom: 12px;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: #ff72b7;
+
+    padding-left: 5px;
+}
+
+/* ========================================
+   FOOTER CONTACT
+======================================== */
+
+.footer p {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* ========================================
+   FOOTER BOTTOM
+======================================== */
+
+.footer-bottom {
+    border-top:
+        1px solid
+        rgba(255, 255, 255, 0.1);
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+
+    font-size: 13px;
+
+    color: rgba(255, 255, 255, 0.6);
+}

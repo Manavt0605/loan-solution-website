@@ -1,0 +1,316 @@
+/* ========================================
+   RESPONSIVE DESIGN
+======================================== */
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1024px) {
+
+    /* Navigation */
+
+    .nav {
+        gap: 15px;
+    }
+
+    /* Hero */
+
+    .page-hero h1 {
+        font-size: 45px;
+    }
+
+    /* Features */
+
+    .features-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    /* Process */
+
+    .process-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    /* Footer */
+
+    .footer-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 768px) {
+
+    /* =====================================
+       NAVIGATION
+    ===================================== */
+
+    .navbar {
+        height: 70px;
+
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: block;
+
+        order: 2;
+    }
+
+    .navbar > .btn {
+        display: none;
+    }
+
+    .nav {
+        position: absolute;
+
+        top: 70px;
+        left: -5%;
+
+        width: 110%;
+
+        display: none;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 0;
+
+        background: #ffffff;
+
+        padding: 20px;
+
+        box-shadow:
+            0 15px 30px
+            rgba(0, 0, 0, 0.1);
+    }
+
+    .nav.mobile-active {
+        display: flex;
+    }
+
+    .nav > a,
+    .dropdown {
+        width: 100%;
+    }
+
+    .nav > a,
+    .dropdown-link {
+        display: flex;
+
+        justify-content: space-between;
+
+        padding: 14px 0;
+
+        width: 100%;
+    }
+
+    /* Dropdown Mobile */
+
+    .dropdown-menu {
+        position: static;
+
+        width: 100%;
+
+        display: none;
+
+        opacity: 1;
+
+        visibility: visible;
+
+        transform: none;
+
+        box-shadow: none;
+
+        background: #fafafa;
+
+        border-radius: 5px;
+    }
+
+    .dropdown.open .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu a {
+        padding-left: 20px;
+    }
+
+    /* =====================================
+       HERO
+    ===================================== */
+
+    .page-hero {
+        min-height: auto;
+
+        padding:
+            130px 0 80px;
+    }
+
+    .page-hero h1 {
+        font-size: 38px;
+    }
+
+    .page-hero p {
+        font-size: 15px;
+    }
+
+    /* =====================================
+       ABOUT
+    ===================================== */
+
+    .about-section {
+        padding: 70px 0;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .about-image {
+        min-height: 300px;
+    }
+
+    .about-content h2 {
+        font-size: 30px;
+    }
+
+    /* =====================================
+       SERVICES
+    ===================================== */
+
+    .services {
+        padding: 70px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 40px;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* =====================================
+       PROCESS
+    ===================================== */
+
+    .process {
+        padding: 70px 0;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* =====================================
+       CTA
+    ===================================== */
+
+    .cta {
+        padding: 70px 0;
+    }
+
+    .cta h2 {
+        font-size: 30px;
+    }
+
+    /* =====================================
+       FORMS
+    ===================================== */
+
+    .form-container {
+        padding: 30px 20px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-header h1 {
+        font-size: 30px;
+    }
+
+    /* Contact */
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* =====================================
+       FOOTER
+    ===================================== */
+
+    .footer {
+        padding-top: 50px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+}
+
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 480px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .page-hero h1 {
+        font-size: 32px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .section-heading h2 {
+        font-size: 27px;
+    }
+
+    .about-content h2 {
+        font-size: 27px;
+    }
+
+    .cta h2 {
+        font-size: 27px;
+    }
+
+    .loan-big-icon {
+        width: 110px;
+        height: 110px;
+
+        font-size: 50px;
+    }
+
+}
